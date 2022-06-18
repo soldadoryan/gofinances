@@ -16,7 +16,6 @@ const SignIn: React.FC = () => {
     try {
       await signInWithGoogle();
     } catch (error) {
-      console.log(error);
       Alert.alert('Não foi possível conectar à conta Google!');
     }
   }
@@ -25,7 +24,6 @@ const SignIn: React.FC = () => {
     try {
       await signInWithApple();
     } catch (error) {
-      console.log(error);
       Alert.alert('Não foi possível conectar à conta Apple!');
     }
   }
